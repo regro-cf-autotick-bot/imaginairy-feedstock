@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points: 
     - imagine = imaginairy.cmds:imagine_cmd
     - aimg = imaginairy.cmds:aimg
@@ -74,4 +74,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - brycedrennan
     - jan-janssen
