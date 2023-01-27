@@ -1,5 +1,5 @@
 {% set name = "imaginairy" %}
-{% set version = "8.1.0" %}
+{% set version = "8.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/brycedrennan/imaginAIry/archive/{{ version }}.tar.gz
-  sha256: 1619d5363a36517c614196d2be400f86eafb06a616e7fd2aa9e82f4bebbc3260
+  sha256: bcf12900c635f8d31acdd93791fa86bb63c16aa43b9ad21ea8f930a423671d04
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
-  entry_points: 
+  number: 0
+  entry_points:
     - imagine = imaginairy.cmds:imagine_cmd
     - aimg = imaginairy.cmds:aimg
 
@@ -34,7 +34,7 @@ requirements:
     - tqdm
     - diffusers
     - imageio >=2.9.0
-    - pillow >=8.0.0 
+    - pillow >=8.0.0
     - psutil
     - pytorch-lightning >=1.4.2
     - omegaconf >=2.1.1
@@ -63,7 +63,7 @@ test:
 
 about:
   home: https://github.com/brycedrennan/imaginAIry
-  summary: 'AI imagined images. Pythonic generation of stable diffusion images.'
+  summary: AI imagined images. Pythonic generation of stable diffusion images.
   description: |
     AI imagined images. Pythonic generation of stable diffusion images.
   license: MIT
