@@ -25,6 +25,7 @@ requirements:
     - python >=3.6
     - click <8
     - click-shell
+    - click-help-colors
     - protobuf !=3.20.2, !=3.19.5
     - facexlib
     - fairscale >=0.4.4  # for vendored blip
