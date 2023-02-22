@@ -50,6 +50,7 @@ requirements:
     - torchmetrics >=0.6.0
     - torchvision >=0.13.1
     - kornia >=0.6
+    - xformers
 
 test:
   imports:
