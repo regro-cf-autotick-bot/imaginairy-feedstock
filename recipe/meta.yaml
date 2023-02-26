@@ -14,8 +14,8 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
-    - imagine = imaginairy.cmds:imagine_cmd
-    - aimg = imaginairy.cmds:aimg
+    - imagine = imaginairy.cli.main:imagine_cmd
+    - aimg = imaginairy.cli.main:aimg
 
 requirements:
   host:
