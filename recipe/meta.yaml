@@ -37,7 +37,7 @@ requirements:
     - imageio >=2.9.0
     - pillow >=8.0.0
     - psutil
-    - pytorch-lightning >=1.4.2
+    - pytorch-lightning <2.0.0,>=1.4.2
     - omegaconf >=2.1.1
     - open-clip-torch
     - py-opencv
