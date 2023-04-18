@@ -1,5 +1,5 @@
 {% set name = "imaginairy" %}
-{% set version = "11.1.0" %}
+{% set version = "11.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brycedrennan/imaginAIry/archive/{{ version }}.tar.gz
-  sha256: 7e11b5cd3e4e04f767b4bcf0fc3d31f2ddf2882eae18d90b1fa2cd0c2c03b64f
+  sha256: 3850165f618d58d35c678f325573470b3d45aac3c8b391b61ece8bf3f9048f89
 
 build:
   noarch: python
