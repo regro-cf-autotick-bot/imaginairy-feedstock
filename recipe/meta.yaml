@@ -1,5 +1,5 @@
 {% set name = "imaginairy" %}
-{% set version = "13.0.0" %}
+{% set version = "13.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brycedrennan/imaginAIry/archive/{{ version }}.tar.gz
-  sha256: a36fc3dc519c626ca55ccdc3e9573316158e5ee5592b1cd815fc5a9295b36fdf
+  sha256: 7c67d5a0c0fd8615d56b0bc0de2ce25003ec25effcfe01c50c54817614d3b1e6
 
 build:
   noarch: python
@@ -19,10 +19,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6,<3.11
     - pip
   run:
-    - python >=3.6
+    - python >=3.6,<3.11
     - click <8
     - click-shell
     - click-help-colors
