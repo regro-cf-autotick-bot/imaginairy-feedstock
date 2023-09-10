@@ -1,5 +1,5 @@
 {% set name = "imaginairy" %}
-{% set version = "13.0.1" %}
+{% set version = "13.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brycedrennan/imaginAIry/archive/{{ version }}.tar.gz
-  sha256: 7c67d5a0c0fd8615d56b0bc0de2ce25003ec25effcfe01c50c54817614d3b1e6
+  sha256: b666f4ffcc79c2b0f4efa5dfe53903e8cdb2707ff2aebfe32a982909b0f8dff5
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.6,<3.11
-    - click <8
+    - click >=8.0.0
     - click-shell
     - click-help-colors
     - protobuf !=3.20.2, !=3.19.5
@@ -52,8 +52,9 @@ requirements:
     - kornia >=0.6
     - xformers
     - fastapi
-    - pydantic
+    - pydantic <2
     - uvicorn
+    - scipy <1.11
 
 test:
   imports:
