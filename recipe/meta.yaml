@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.6,<3.11
-    - click <8
+    - click >=8.0.0
     - click-shell
     - click-help-colors
     - protobuf !=3.20.2, !=3.19.5
@@ -54,6 +54,7 @@ requirements:
     - fastapi
     - pydantic <2
     - uvicorn
+    - scipy <1.11
 
 test:
   imports:
