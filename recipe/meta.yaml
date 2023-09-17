@@ -52,7 +52,7 @@ requirements:
     - kornia >=0.6
     - xformers
     - fastapi
-    - pydantic <2
+    - pydantic
     - uvicorn
     - scipy <1.11
 
