@@ -55,6 +55,7 @@ requirements:
     - pydantic
     - uvicorn
     - scipy <1.11
+    - triton
 
 test:
   imports:
