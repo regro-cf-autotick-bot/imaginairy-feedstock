@@ -12,17 +12,17 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - imagine = imaginairy.cli.main:imagine_cmd
     - aimg = imaginairy.cli.main:aimg
 
 requirements:
   host:
-    - python >=3.6,<3.11
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6,<3.11
+    - python >={{ python_min }},<3.11
     - click >=8.0.0
     - click-shell
     - click-help-colors
@@ -61,6 +61,7 @@ test:
     - imaginairy
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
     - imagine --help
